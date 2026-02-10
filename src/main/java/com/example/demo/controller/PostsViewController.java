@@ -12,7 +12,7 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class PostsViewController {
     @Autowired
-    PostService postsService;
+    private PostService postsService;
 
     @RequestMapping(path = "/", method = RequestMethod.GET)
     public String list(Model model) {
